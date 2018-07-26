@@ -26,5 +26,6 @@ public class HomePage extends BasePage {
         WebElement courseName=ManageDriver.getInstance().getWebDriver().
                 findElement(By.xpath("//h4[contains(text(),'"+course+"')]"));
         Assert.assertTrue(CommonEvents.isVisible(courseName));
+
     }
 }

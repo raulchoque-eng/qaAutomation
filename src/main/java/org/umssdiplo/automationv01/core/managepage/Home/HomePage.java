@@ -12,6 +12,7 @@ import org.umssdiplo.automationv01.core.utils.CommonEvents;
 
 import java.security.Key;
 import java.sql.DriverManager;
+import java.util.List;
 
 public class HomePage extends BasePage {
     @FindBy(xpath = "//input[@type='search']")
@@ -35,6 +36,13 @@ public class HomePage extends BasePage {
 
     public void goToCreateEmployees() {
         SelectCreateEmployee.click();
+    }
+
+    public void registerPerson() {
+        List<List<String>> registerPersonal = datos.raw();
+        lleno_el_campo_email_con(credenciales.get(0).get(1));
+        lleno_el_campo_password_con(credenciales.get(1).get(1));
+        hago_click_en_el_boton_Sing_In();
     }
 }
 

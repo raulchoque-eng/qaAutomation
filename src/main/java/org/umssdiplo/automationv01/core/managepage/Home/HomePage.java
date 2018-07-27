@@ -28,8 +28,14 @@ public class HomePage extends BasePage {
         Assert.assertTrue(CommonEvents.isVisible(courseName));
 
     }
+
+    @FindBy(xpath = "//button[contains(text(),'Crear Empleado')]")
+    //@FindBy(id="navbar-menu")
+    private WebElement SelectCreateEmployee;
+
+    public void goToCreateEmployees() {
+        SelectCreateEmployee.click();
+    }
 }
 
-//pryeba de testing
-//nueva prueba
-//segunda prueba nnooooo
+

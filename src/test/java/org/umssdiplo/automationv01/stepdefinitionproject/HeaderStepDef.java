@@ -5,8 +5,16 @@ import org.umssdiplo.automationv01.core.managepage.Home.Header;
 
 public class HeaderStepDef {
     Header headerUI = new Header();
+
     @When("^I go to the All Courses Tab$")
     public void goToAllCoursesTab() {
         headerUI.goToAllCoursesTab();
+    }
+
+    @When("^I go to the All Person and employees tab$")
+    public void i_go_to_the_All_Person_and_employees_tab() {
+        headerUI.goToEmployees();
+        // Write code here that turns the phrase above into concrete actions
+
     }
 }

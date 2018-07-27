@@ -8,7 +8,20 @@ public class Header extends BasePage {
     @FindBy(xpath = "//a[contains(text(),'All Courses')]")
     private WebElement allCoursesTab;
 
+
     public  void goToAllCoursesTab(){
         allCoursesTab.click();
+    }
+
+    @FindBy(id="empleados-dropdown")
+    private WebElement SelectPersonal;
+
+    @FindBy(xpath = "//span[contains(text(),'Empleados')]")
+    //@FindBy(id="navbar-menu")
+    private WebElement SelectEmployees;
+
+    public void goToEmployees() {
+        SelectPersonal.click();
+        SelectEmployees.click();
     }
 }

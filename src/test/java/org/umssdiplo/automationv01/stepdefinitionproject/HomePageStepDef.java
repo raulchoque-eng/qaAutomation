@@ -25,7 +25,35 @@ public class HomePageStepDef {
 
     @When("^I go to the All Llenar campos employee Tab$")
     public void i_go_to_the_All_Llenar_campos_employee_Tab(DataTable datos) {
-        home.registerPerson();
+        home.registerPerson(datos);
+    }
+    @When("^I go to the All Llenar campos Registro Perfil Tab$")
+    public void i_go_to_the_All_Llenar_campos_Registro_Perfil_Tab(DataTable datos){
+        home.registerPerfil(datos);
+
+    }
+    @When("^I go to the All Llenar campos formulario Contrato  Tab$")
+    public void i_go_to_the_All_Llenar_campos_formulario_Contrato_Tab(DataTable datos)  {
+        home.registerformuContract(datos);
+    }
+
+    @When("^I go to the button buscar obbra$")
+    public void i_go_to_the_button_buscar_obbra(DataTable datos){
+        home.buscarObraenDepa(datos);
+    }
+
+    @When("^i go to assign obra$")
+    public void i_go_to_assign_obra(DataTable datos){
+        home.assignaObra(datos);
+    }
+
+    @When("^I go to create new Cargo$")
+    public void i_go_to_create_new_Cargo(){
+        home.goToCreateCargo();
+    }
+    @When("^I go to fill the fields to cargo$")
+    public void i_go_to_fill_the_fields_to_cargo(DataTable datos){
+        home.camposCargo(datos);
     }
 
 }

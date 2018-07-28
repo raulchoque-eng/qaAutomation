@@ -24,4 +24,28 @@ public class Header extends BasePage {
         SelectPersonal.click();
         SelectEmployees.click();
     }
+
+
+    //SALIMOS DE LA PAGINA PRINCIPAL
+    @FindBy(id="user-dropdown")
+    private WebElement endUser;
+
+    @FindBy(xpath = "//button[contains(text(),'Logout')]")
+    private WebElement fin;
+
+    public void goTofin() {
+        endUser.click();
+        fin.click();
+    }
+
+    @FindBy(id="empleados-dropdown")
+    private WebElement SelectPersona;
+
+    @FindBy(xpath = "//span[contains(text(),'Cargos')]")
+    private WebElement SelectCargo;
+
+    public void goToEmployeesCargo() {
+        SelectPersona.click();
+        SelectCargo.click();
+    }
 }

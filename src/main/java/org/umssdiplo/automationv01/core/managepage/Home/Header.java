@@ -63,4 +63,15 @@ public class Header extends BasePage {
   public void leftToAppIzzy() {
     serrarSecionTipoEquipo.click();
   }
+
+  @FindBy(xpath = "//span[contains(text(),'Cargos')]")
+  private WebElement pestaniaCargo;
+
+  @FindBy(xpath = "//span[contains(text(),'PERSONAL')]")
+  private WebElement pestaniaEmpleado;
+
+  public void entrarALaPestaniaCargo() {
+    pestaniaEmpleado.click();
+    pestaniaCargo.click();
+     }
 }

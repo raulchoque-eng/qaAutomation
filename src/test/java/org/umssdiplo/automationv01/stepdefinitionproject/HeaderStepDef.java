@@ -1,5 +1,7 @@
 package org.umssdiplo.automationv01.stepdefinitionproject;
 
+import cucumber.api.PendingException;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.When;
 import org.umssdiplo.automationv01.core.managepage.Home.Header;
 
@@ -39,5 +41,10 @@ public class HeaderStepDef {
     @When("^I left to the app izzy$")
     public void i_left_to_the_app_izzy() {
         headerUI.leftToAppIzzy();
+    }
+
+    @And("^I go to the All Cargo Tab$")
+    public void iGoToTheAllCargoTab() throws Throwable {
+        headerUI.entrarALaPestaniaCargo();
     }
 }

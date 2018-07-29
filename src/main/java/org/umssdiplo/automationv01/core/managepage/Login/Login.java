@@ -7,17 +7,22 @@ import org.umssdiplo.automationv01.core.utils.CommonEvents;
 import org.umssdiplo.automationv01.core.utils.PropertyAccessor;
 
 public class Login extends BasePage {
-    @FindBy(id = "user_email")
+    @FindBy(id = "user")
     private WebElement emailTextBox;
 
-    @FindBy(id = "user_password")
+    @FindBy(id = "passw")
     private WebElement passwordTextBox;
 
-    @FindBy(id = "btn-signin")
+    @FindBy(id = "buton")
     private WebElement loginButton;
 
-    @FindBy(xpath = "//p[contains(text(),'Signed in successfully.')]")
-    private WebElement successLoginMessage;
+    @FindBy(id = "user-dropdown")
+    private WebElement Desloguearse;
+
+    @FindBy(xpath = "//button[contains(text(),'Logout')]")
+    private WebElement logout;
+//    @FindBy(xpath = "//p[contains(text(),'Signed in successfully.')]")
+//    private WebElement successLoginMessage;
 
     public void login(){
         String username = PropertyAccessor.getInstance().getUser();
@@ -25,8 +30,16 @@ public class Login extends BasePage {
         CommonEvents.setInputField(emailTextBox,username);
         CommonEvents.setInputField(passwordTextBox,password);
         CommonEvents.clickButton(loginButton);
-        CommonEvents.waitForEelmentIsNotVisible(successLoginMessage);
+//        CommonEvents.waitForEelmentIsNotVisible(successLoginMessage);
 
 
+    }
+
+    public void cerrarSesion1() {
+        CommonEvents.clickButton(Desloguearse);
+    }
+
+    public void cerrarSesion() {
+        CommonEvents.clickButton(logout);
     }
 }

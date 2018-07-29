@@ -74,4 +74,14 @@ public class Header extends BasePage {
     pestaniaEmpleado.click();
     pestaniaCargo.click();
      }
+  @FindBy(xpath = "//span[contains(text(),'Auditoria')]")
+  private WebElement pestaniaAuditoria;
+  @FindBy(xpath = "//span[contains(text(),'Auditoria History')]")
+  private WebElement auditoriaHistory;
+
+  public void entrarALaPestaniaAuditoria() {
+  pestaniaAuditoria.click();
+  auditoriaHistory.click();
+
+  }
 }

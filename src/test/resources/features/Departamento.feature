@@ -8,10 +8,10 @@ Feature: Departament
     Then Presiono en la opcion departamento que se encuentra en el header
     And registramos una nuevo departamento
     And llenar el formulario del departmento
-      | Ingresar el nombre | rudy       |
-      | Ubicacion          | Av.putitas |
-      | Telefono           | 44456215   |
-      | Descripcion        | asdasdasd  |
+      | Ingresar el nombre | Departamento de Administracion                                              |
+      | Ubicacion          | Av.America                                                                  |
+      | Telefono           | 4446633                                                                     |
+      | Descripcion        | Departamento de Administracion encargado de la administracion de la empresa |
     And registramos el nuevo departamento
     And  Hago click user
     And  Cerrar aplicacion

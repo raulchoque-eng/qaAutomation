@@ -9,7 +9,7 @@ import org.umssdiplo.automationv01.core.utils.LoadPage;
 public class StepsDefinitionPHPtravel {
     private Login login;
 
-    @Given("^Ultimate QA page is loaded$")
+    @Given("^La pagina CONCRETEC esta cargada$")
     public void phpTravelPageIsLoaded() throws Throwable {
         login = LoadPage.loginPage();
     }

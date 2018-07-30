@@ -6,8 +6,8 @@ import org.umssdiplo.automationv01.core.managepage.Login.Login;
 public class LoginStepDef {
     Login loginPage = new Login();
 
-    @When("^I log on the application$")
-    public void i_log_on_the_application() {
+    @When("^Inicio cesion en la aplicacion$")
+    public void Inicio_cesion_en_la_aplicacion() {
         loginPage.login();
     }
 }

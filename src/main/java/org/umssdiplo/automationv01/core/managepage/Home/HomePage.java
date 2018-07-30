@@ -21,17 +21,9 @@ public class HomePage extends BasePage {
     private WebElement messageLabel;
 
     public void seeMessage(String message) {
-
-<<<<<<< HEAD
-    public void verifyCouseIsDisplayed(String course){
-        WebElement courseName=ManageDriver.getInstance().getWebDriver().
-                findElement(By.xpath("//h4[contains(text(),'"+course+"')]"));
-        Assert.assertTrue(CommonEvents.isVisible(courseName));
-
-=======
         String actualMesssage = messageLabel.getAttribute("innerText");
         Assert.assertEquals(actualMesssage, message);
->>>>>>> automation test from Accident and Accident Type
+
     }
 
 }

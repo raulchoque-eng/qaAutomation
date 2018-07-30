@@ -7,7 +7,7 @@ public class LoginStepDef {
     Login loginPage = new Login();
 
     @When("^I log on the application$")
-    public void i_log_on_the_application() {
+    public void i_log_on_the_application(){
         loginPage.login();
     }
 }

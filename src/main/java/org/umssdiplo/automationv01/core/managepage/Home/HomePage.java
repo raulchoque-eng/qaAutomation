@@ -26,8 +26,7 @@ public class HomePage extends BasePage {
 
     }
 
-<<<<<<< HEAD
-=======
+
         @FindBy(xpath = "//button[contains(text(),'Nuevo Equipo')]")
         private WebElement RegisterEquipo;
 
@@ -80,7 +79,7 @@ public class HomePage extends BasePage {
     private void lleno_el_campo_nombre(String nombre) {
         NombreEquipo.sendKeys(nombre);
     }
-//Tipo Equipo...
+
             @FindBy(xpath = "//button[contains(text(),'Nuevo Tipo Equipo')]")
             private WebElement nuevoTipoEquipo;
     public void createNewTipoEquipo() {
@@ -122,5 +121,4 @@ public class HomePage extends BasePage {
     private void lleno_el_campo_nombreTipoEquipo(String nombreTipoEquipo) {
         NombreTipoEquipo.sendKeys(nombreTipoEquipo);
     }
->>>>>>> cdbda93bea1c6cfde94659e057ed145e993a8e69
 }

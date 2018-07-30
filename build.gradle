@@ -57,7 +57,7 @@ task runFeatures(type: Test) {
     scanForTestClasses = false
 
     // Do not use the Gradle's HTML report:
-    reports.html.enabled = false
+    reports.html.enabled = true
 
     ignoreFailures = true
 
@@ -84,7 +84,7 @@ def generateReport(String pathCucumber, String pathReport){
 // addidtional metadata presented on main page
     configuration.addClassifications("Platform", "Windows")
     configuration.addClassifications("Browser", "Firefox")
-    configuration.addClassifications("Branch", "release/1.0")
+    //configuration.addClassifications("Branch", "release/1.0")
 
     ReportBuilder reportBuilder = new ReportBuilder(jsonFiles, configuration)
     reportBuilder.generateReports()

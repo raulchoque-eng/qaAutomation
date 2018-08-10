@@ -61,6 +61,11 @@ public class HeaderStepDef {
         headerUI.entrarALaPestaniaCargo();
     }
 
+    @And("^I go to the All TipoDocumento Tab$")
+    public void iGoToTheAllTipoDocumentoTab() throws Throwable {
+        headerUI.entrarALaPestaniaTipoDocumento();
+    }
+
     @And("^entrar a la pestania de auditoria$")
     public void entrarALaPestaniaDeAuditoria() throws Throwable {
         // Write code here that turns the phrase above into concrete actions

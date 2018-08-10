@@ -45,7 +45,7 @@ public class AccidentPage extends BasePage {
     @FindBy(xpath = "//table[1]/tbody/tr/td[2]")
     private WebElement searchFirstName;
 
-    @FindBy(xpath = "//table[@class='table']/tbody/tr[6]/td[2]")
+    @FindBy(xpath = "//table[@class='table']/tbody/tr[45]/td[2]")
     private WebElement nameEmployeeUpdate;
 
     @FindBy(xpath = "//table[@class='table']/tbody/tr[6]/td[4]/button")

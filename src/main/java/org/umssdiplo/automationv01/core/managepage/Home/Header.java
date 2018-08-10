@@ -90,10 +90,18 @@ public class Header extends BasePage {
   @FindBy(xpath = "//span[contains(text(),'PERSONAL')]")
   private WebElement pestaniaEmpleado;
 
+  @FindBy(xpath = "//span[contains(text(),'Tipos de Contratos')]")
+  private WebElement pestaniaTipoDocumento;
+
   public void entrarALaPestaniaCargo() {
     pestaniaEmpleado.click();
     pestaniaCargo.click();
      }
+
+  public void entrarALaPestaniaTipoDocumento() {
+    pestaniaEmpleado.click();
+    pestaniaTipoDocumento.click();
+  }
   @FindBy(xpath = "//span[contains(text(),'Auditoria')]")
   private WebElement pestaniaAuditoria;
   @FindBy(xpath = "//span[contains(text(),'Auditoria History')]")

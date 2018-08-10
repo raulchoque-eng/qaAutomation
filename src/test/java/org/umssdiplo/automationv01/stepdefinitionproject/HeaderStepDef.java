@@ -14,6 +14,12 @@ public class HeaderStepDef {
         headerUI.goToAllCoursesTab();
     }
 
+    @And("^I go to the All TipoDocumento Tab$")
+    public void iGoToTheAllTipoDocumentoTab() throws Throwable {
+        headerUI.entrarALaPestaniaTipoDocumento();
+    }
+
+
 
     @When("^I go to the Accident tab$")
     public void igo_to_the_Accident_tab(){

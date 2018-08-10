@@ -20,7 +20,6 @@ Feature: Accident
     And I go to log out
   Scenario: I should be able to update an Accident
     Given Ultimate QA page is loaded
-    #Given  I log on the application
     And I log on the application
     When I go to see message "Bienvenido!!!!"
     And I go to the Accident tab

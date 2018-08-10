@@ -1,10 +1,7 @@
 package org.umssdiplo.automationv01.stepdefinitionproject;
 
 import cucumber.api.DataTable;
-<<<<<<< HEAD
-import cucumber.api.java.en.Then;
-=======
->>>>>>> cdbda93bea1c6cfde94659e057ed145e993a8e69
+
 import cucumber.api.java.en.When;
 import org.umssdiplo.automationv01.core.managepage.Home.HomePage;
 

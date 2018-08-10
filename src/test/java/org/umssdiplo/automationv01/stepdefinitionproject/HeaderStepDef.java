@@ -1,11 +1,9 @@
 package org.umssdiplo.automationv01.stepdefinitionproject;
 
-<<<<<<< HEAD
-import cucumber.api.java.en.Then;
-=======
-import cucumber.api.PendingException;
+
+
 import cucumber.api.java.en.And;
->>>>>>> cdbda93bea1c6cfde94659e057ed145e993a8e69
+import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.umssdiplo.automationv01.core.managepage.Home.Header;
 
@@ -16,7 +14,7 @@ public class HeaderStepDef {
         headerUI.goToAllCoursesTab();
     }
 
-<<<<<<< HEAD
+
     @When("^I go to the Accident tab$")
     public void igo_to_the_Accident_tab(){
             headerUI.goToAccidentTab();
@@ -25,7 +23,8 @@ public class HeaderStepDef {
     @Then("^I go to the Accident Type tab$")
     public void iGoToTheAccidentTypeTab() throws Throwable {
         headerUI.goToAccidentTypeTab();
-=======
+    }
+
     @When("^I go to the All Equipo Tab$")
     public void i_go_to_the_All_Equipo_Tab() {
         headerUI.goToAllEquipo();
@@ -66,6 +65,5 @@ public class HeaderStepDef {
     public void entrarALaPestaniaDeAuditoria() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         headerUI.entrarALaPestaniaAuditoria();
->>>>>>> cdbda93bea1c6cfde94659e057ed145e993a8e69
     }
 }

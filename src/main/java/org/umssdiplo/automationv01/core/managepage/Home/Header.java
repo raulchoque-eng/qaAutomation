@@ -21,7 +21,6 @@ public class Header extends BasePage {
         allCoursesTab.click();
     }
 
-<<<<<<< HEAD
     public void goToAccidentTab(){
         selectAccidentTab.click();
         accidentTab.click();
@@ -33,7 +32,6 @@ public class Header extends BasePage {
         accidentTypeTab.click();
     }
 
-=======
     @FindBy(xpath = "//span[contains(text(),'EQUIPO')]")
     private WebElement SelectEquipo;
 
@@ -106,5 +104,4 @@ public class Header extends BasePage {
   auditoriaHistory.click();
 
   }
->>>>>>> cdbda93bea1c6cfde94659e057ed145e993a8e69
 }
